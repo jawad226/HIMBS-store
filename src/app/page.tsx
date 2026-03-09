@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import Button from '../components/ui/Button';
 import ProductCard from '../components/ui/ProductCard';
+import { FadeIn, StaggerContainer, StaggerItem, ScaleIn, CountUp } from '../components/ui/MotionWrapper';
 
 import productsData from '@/data/products.json';
 import siteConfig from '@/data/siteConfig.json';
@@ -39,7 +40,7 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="max-w-3xl space-y-8 animate-fade-in">
+          <FadeIn className="max-w-3xl space-y-8">
             <div className="space-y-4">
               <div className="inline-block px-4 py-1.5 rounded-full bg-accent/20 border border-accent/20 text-accent text-xs font-bold uppercase tracking-[0.2em]">
                  {siteConfig.hero.dailyRatesNotice}
@@ -70,7 +71,7 @@ export default function Home() {
                 Cement & Iron Rates Change Daily – <span className="text-accent">Contact Us For Latest Prices</span>
               </p>
             </div>
-          </div>
+          </FadeIn>
         </div>
 
         {/* Decorative Elements */}
@@ -80,7 +81,7 @@ export default function Home() {
       {/* Featured Products Section */}
       <section className="py-20 md:py-32 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center space-y-4 mb-20">
+          <FadeIn className="text-center space-y-4 mb-20">
             <h2 className="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">
               Featured Products
             </h2>
@@ -88,17 +89,17 @@ export default function Home() {
             <p className="text-slate-500 font-medium max-w-2xl mx-auto">
               We supply only the most trusted and certified brands in the construction industry.
             </p>
-          </div>
+          </FadeIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {featuredProducts.map((product, index) => (
-              <ProductCard 
-                key={index}
-                {...product}
-                className={`animate-slide-up-fade animation-delay-${index * 100}`}
-              />
+              <StaggerItem key={index}>
+                <ProductCard 
+                  {...product}
+                />
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
           
           <div className="mt-16 text-center">
             <Link href="/products">
@@ -118,7 +119,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8 animate-fade-in">
+            <FadeIn className="space-y-8">
               <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-black uppercase tracking-[0.2em] backdrop-blur-md">
                  Our Legacy
               </div>
@@ -144,9 +145,9 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-            </div>
+            </FadeIn>
             
-            <div className="relative animate-scale-in flex justify-center lg:justify-end">
+            <ScaleIn className="relative flex justify-center lg:justify-end">
                <div className="aspect-square relative w-full max-w-[440px] rounded-[60px] overflow-hidden border-8 border-white/10 shadow-2xl rotate-3">
                   <Image 
                     src="/images/hero_bg.png" 
@@ -157,17 +158,17 @@ export default function Home() {
                   <div className="absolute inset-0 bg-brand-gradient/20 mix-blend-overlay" />
                </div>
                <div className="absolute -bottom-6 -left-6 bg-accent p-8 rounded-3xl shadow-2xl text-white -rotate-3">
-                  <p className="text-5xl font-black tracking-tighter italic">15+</p>
+                <p className="text-5xl font-black tracking-tighter italic"><CountUp target={15} suffix="+" /></p>
                   <p className="text-xs font-black uppercase tracking-[0.2em] opacity-80">Years Excellence</p>
                </div>
-            </div>
+            </ScaleIn>
           </div>
         </div>
       </section>
       {/* Trust & Quality Section */}
       <section className="py-20 md:py-24 bg-white border-y border-slate-100">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {siteConfig.home.features.map((feature: any, i: number) => {
               const getFeatureIcon = (id: string) => {
                 switch (id) {
@@ -178,20 +179,21 @@ export default function Home() {
                 }
               };
               return (
-                <div key={i} className="flex flex-col items-center text-center space-y-4 group">
+                <StaggerItem key={i} className="flex flex-col items-center text-center space-y-4 group">
                   <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-black transition-all duration-300 transform group-hover:-translate-y-2">
                     {getFeatureIcon(feature.id)}
                   </div>
                   <h3 className="text-xl font-extrabold text-primary tracking-tight">{feature.title}</h3>
                   <p className="text-slate-500 leading-relaxed">{feature.desc}</p>
-                </div>
+                </StaggerItem>
               );
             })}
-          </div>
+          </StaggerContainer>
         </div>
       </section>
       {/* CTA Section */}
       <section className="relative z-20 -mb-28 px-4 md:px-6">
+        <ScaleIn>
         <div className="container mx-auto bg-brand-gradient rounded-[40px] md:rounded-[60px] overflow-hidden relative min-h-[450px] flex items-center shadow-elite border border-white/10">
           {/* Floating Decorative Elements */}
           <div className="absolute top-1/4 -left-12 w-48 h-12 bg-white/10 rounded-full rotate-45 blur-md animate-pulse-slow" />
@@ -236,7 +238,7 @@ export default function Home() {
                   </button>
                 </div>
                 <p className="text-white/30 font-black uppercase tracking-[0.3em] text-[10px]">
-                  Bulk Orders Accepted & Delivered Across Sahiwal
+                    Bulk Orders Accepted & Delivered Across Bahawalpur
                 </p>
               </div>
 
@@ -268,6 +270,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </ScaleIn>
       </section>
     </main>
   );

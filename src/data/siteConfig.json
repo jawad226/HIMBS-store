@@ -7,7 +7,12 @@
     "phoneRaw": "+923035189560",
     "whatsapp": "+923035189560",
     "whatsappRaw": "923035189560",
-    "address": "Islamia University Rd, Gulshan E Iqbal 2, Bahawalpur"
+    "address": "Islamia University Rd, Gulshan E Iqbal 2, Bahawalpur",
+    "email": "hafizironstore@gmail.com",
+    "social": {
+      "facebook": "https://facebook.com/hafizironstore",
+      "linkedin": "https://linkedin.com/company/hafizironstore"
+    }
   },
   "businessHours": {
     "days": "Mon -thus or sat - sun",

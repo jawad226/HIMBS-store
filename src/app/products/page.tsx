@@ -14,6 +14,7 @@ import productsData from '@/data/products.json';
 import siteConfig from '@/data/siteConfig.json';
 import Button from '../../components/ui/Button';
 import ProductCard from '../../components/ui/ProductCard';
+import { FadeIn, StaggerContainer, StaggerItem, ScaleIn } from '../../components/ui/MotionWrapper';
 
 export default function ProductsPage() {
   const categories = productsData.categories;
@@ -36,7 +37,7 @@ export default function ProductsPage() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full translate-y-1/3 -translate-x-1/3 blur-3xl pointer-events-none" />
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="max-w-3xl">
+          <FadeIn className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
               <span className="text-xs font-bold uppercase tracking-[0.3em] text-white/70">Our Materials</span>
@@ -69,7 +70,7 @@ export default function ProductsPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -77,30 +78,32 @@ export default function ProductsPage() {
       {categories.map((category) => (
         <section key={category.id} id={category.id} className="py-20 border-b border-slate-50 last:border-b-0">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="flex items-center gap-4 mb-12">
+            <FadeIn className="flex items-center gap-4 mb-12">
               <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
                 {getCategoryIcon(category.id)}
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-primary tracking-tight">
                 {category.name}
               </h2>
-            </div>
+            </FadeIn>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {category.products.map((product, index) => (
-                <ProductCard 
-                  key={index}
-                  category={category.name}
-                  {...product}
-                />
+                <StaggerItem key={index}>
+                  <ProductCard 
+                    category={category.name}
+                    {...product}
+                  />
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
           </div>
         </section>
       ))}
 
       {/* CTA Section */}
       <section className="relative z-20 -mb-28 px-4 md:px-6">
+        <ScaleIn>
         <div className="container mx-auto bg-brand-gradient rounded-[40px] md:rounded-[60px] overflow-hidden relative min-h-[450px] flex items-center shadow-elite border border-white/10">
           {/* Floating Decorative Elements */}
           <div className="absolute top-1/4 -left-12 w-48 h-12 bg-white/10 rounded-full rotate-45 blur-md animate-pulse-slow" />
@@ -177,6 +180,7 @@ export default function ProductsPage() {
             </div>
           </div>
         </div>
+        </ScaleIn>
       </section>
     </main>
   );

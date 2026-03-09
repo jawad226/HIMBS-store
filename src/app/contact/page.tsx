@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import siteConfig from '@/data/siteConfig.json';
+import { FadeIn, StaggerContainer, StaggerItem, ScaleIn } from '@/components/ui/MotionWrapper';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -28,7 +29,7 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="pt-36 pb-20 bg-brand-gradient text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none" />
-        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center space-y-4">
+        <FadeIn className="container mx-auto px-4 md:px-6 relative z-10 text-center space-y-4">
           <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-black uppercase tracking-[0.2em] backdrop-blur-md">
             Get In Touch
           </div>
@@ -39,7 +40,7 @@ export default function Contact() {
           <p className="text-lg text-white/70 font-medium max-w-2xl mx-auto leading-relaxed pt-4">
             Whether you're starting a new construction or needs bulk supplies, our team is here to provide the best market rates and quality materials.
           </p>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Main Content */}
@@ -47,9 +48,9 @@ export default function Contact() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start max-w-7xl mx-auto">
           
           {/* Left Side: Contact Information Cards */}
-          <div className="lg:w-1/3 space-y-6 w-full animate-fade-in">
-            {/* Office Location */}
-            <div className="group relative bg-white p-8 md:p-10 rounded-[40px] shadow-sm border border-slate-100 hover:shadow-elite hover:border-accent/20 transition-all duration-500 overflow-hidden">
+          <StaggerContainer className="lg:w-1/3 space-y-6 w-full" staggerDelay={0.15}>
+            <StaggerItem>
+              <div className="group relative bg-white p-8 md:p-10 rounded-[40px] shadow-sm border border-slate-100 hover:shadow-elite hover:border-accent/20 transition-all duration-500 overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-slate-50 rounded-bl-full -z-10 group-hover:bg-accent/5 group-hover:scale-110 transition-all duration-500" />
               <div className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 text-slate-400 group-hover:text-accent group-hover:bg-accent/10 transition-colors duration-500">
                 <Globe size={26} strokeWidth={1.5} />
@@ -58,10 +59,11 @@ export default function Contact() {
               <p className="text-slate-500 font-medium leading-relaxed text-sm">
                 {siteConfig.contact.address}
               </p>
-            </div>
+              </div>
+            </StaggerItem>
 
-            {/* Direct Line */}
-            <div className="group relative bg-white p-8 md:p-10 rounded-[40px] shadow-sm border border-slate-100 hover:shadow-elite hover:border-accent/20 transition-all duration-500 overflow-hidden">
+            <StaggerItem>
+              <div className="group relative bg-white p-8 md:p-10 rounded-[40px] shadow-sm border border-slate-100 hover:shadow-elite hover:border-accent/20 transition-all duration-500 overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-slate-50 rounded-bl-full -z-10 group-hover:bg-accent/5 group-hover:scale-110 transition-all duration-500" />
               <div className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 text-slate-400 group-hover:text-accent group-hover:bg-accent/10 transition-colors duration-500">
                 <PhoneCall size={26} strokeWidth={1.5} />
@@ -74,10 +76,11 @@ export default function Contact() {
                 <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
                 <span className="text-slate-400 text-[9px] uppercase font-black tracking-widest">Available Now</span>
               </div>
-            </div>
+              </div>
+            </StaggerItem>
 
-            {/* WhatsApp Us */}
-            <div className="group relative bg-[#004f86] p-8 md:p-10 rounded-[40px] shadow-lg overflow-hidden">
+            <StaggerItem>
+              <div className="group relative bg-[#004f86] p-8 md:p-10 rounded-[40px] shadow-lg overflow-hidden">
               {/* Decorative elements for dark card */}
               <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent opacity-50 pointer-events-none" />
               <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl" />
@@ -98,11 +101,12 @@ export default function Contact() {
                   <ArrowRight size={16} />
                 </div>
               </button>
-            </div>
-          </div>
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
 
           {/* Right Side: Clean Form */}
-          <div className="lg:w-2/3 w-full bg-white p-8 md:p-12 lg:p-16 rounded-[40px] shadow-elite border border-slate-100 relative overflow-hidden animate-slide-up-fade">
+          <FadeIn delay={0.2} className="lg:w-2/3 w-full bg-white p-8 md:p-12 lg:p-16 rounded-[40px] shadow-elite border border-slate-100 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-2 bg-brand-gradient" />
             
             <div className="mb-10 lg:mb-12">
@@ -199,12 +203,13 @@ export default function Contact() {
                 </div>
               </form>
             )}
-          </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* Map Section */}
       <section className="relative z-30 -mb-28 px-4 md:px-6 container mx-auto">
+        <ScaleIn>
         <div className="bg-[#004f86] flex flex-col items-center p-6 md:p-8 rounded-[40px] shadow-elite border border-white/5 relative overflow-hidden max-w-6xl mx-auto">
           {/* Header for Map inside container */}
           <div className="text-center mb-6 relative z-10 w-full flex flex-col items-center">
@@ -231,6 +236,7 @@ export default function Contact() {
             />
           </div>
         </div>
+        </ScaleIn>
       </section>
     </main>
   );

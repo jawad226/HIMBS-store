@@ -12,6 +12,7 @@ import {
   MessageCircle
 } from 'lucide-react';
 import Button from '../../components/ui/Button';
+import { FadeIn, StaggerContainer, StaggerItem, ScaleIn, CountUp } from '../../components/ui/MotionWrapper';
 
 import siteConfig from '@/data/siteConfig.json';
 
@@ -38,7 +39,7 @@ export default function AboutPage() {
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8 animate-fade-in">
+            <FadeIn className="space-y-8">
               <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-black uppercase tracking-[0.2em] backdrop-blur-md">
                  Our Legacy
               </div>
@@ -64,9 +65,9 @@ export default function AboutPage() {
                   </span>
                 </div>
               </div>
-            </div>
+            </FadeIn>
             
-            <div className="relative animate-scale-in flex justify-center lg:justify-end">
+            <ScaleIn className="relative flex justify-center lg:justify-end">
                <div className="aspect-square relative w-full max-w-[440px] rounded-[60px] overflow-hidden border-8 border-white/10 shadow-2xl rotate-3">
                   <Image 
                     src="/images/hero_bg.png" 
@@ -77,10 +78,10 @@ export default function AboutPage() {
                   <div className="absolute inset-0 bg-brand-gradient/20 mix-blend-overlay" />
                </div>
                <div className="absolute -bottom-6 -left-6 bg-accent p-8 rounded-3xl shadow-2xl text-white -rotate-3">
-                  <p className="text-5xl font-black tracking-tighter italic">15+</p>
+                <p className="text-5xl font-black tracking-tighter italic"><CountUp target={15} suffix="+" /></p>
                   <p className="text-xs font-black uppercase tracking-[0.2em] opacity-80">Years Excellence</p>
                </div>
-            </div>
+            </ScaleIn>
           </div>
         </div>
       </section>
@@ -88,18 +89,18 @@ export default function AboutPage() {
       {/* Values Section */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-20 space-y-4">
+          <FadeIn className="text-center mb-20 space-y-4">
             <h2 className="text-3xl md:text-5xl font-extrabold text-primary tracking-tight">
                Why Choose Us?
             </h2>
             <p className="text-slate-500 font-medium max-w-2xl mx-auto">
                We don't just sell materials; we provide the strength that holds your dreams together.
             </p>
-          </div>
+          </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((item: any, i: number) => (
-              <div key={i} className="p-10 rounded-3xl border border-slate-100 bg-white hover:shadow-xl transition-all duration-500 group">
+              <StaggerItem key={i} className="p-10 rounded-3xl border border-slate-100 bg-white hover:shadow-xl transition-all duration-500 group">
                 <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-accent group-hover:bg-accent group-hover:text-black transition-colors">
                    {getValueIcon(item.id)}
                 </div>
@@ -109,9 +110,9 @@ export default function AboutPage() {
                 <p className="text-slate-500 text-sm leading-relaxed">
                    {item.desc}
                 </p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
         </div>
       </section>
 
@@ -120,7 +121,7 @@ export default function AboutPage() {
          <div className="absolute inset-0 bg-slate-50/50 pointer-events-none" />
          <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-               <div className="space-y-10">
+            <FadeIn className="space-y-10">
                   <div className="flex items-center gap-3">
                     <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
                     <span className="text-xs font-black uppercase tracking-[0.3em] text-slate-400">Our Standards</span>
@@ -138,9 +139,9 @@ export default function AboutPage() {
                        </div>
                      ))}
                   </div>
-               </div>
+            </FadeIn>
                
-               <div className="grid grid-cols-2 gap-6 relative">
+            <ScaleIn className="grid grid-cols-2 gap-6 relative">
                   <div className="space-y-6">
                      <div className="aspect-[4/5] relative rounded-[40px] overflow-hidden shadow-2xl border-4 border-slate-100">
                         <Image src="/images/dg.webp" alt="Cement" fill className="object-cover" />
@@ -155,12 +156,13 @@ export default function AboutPage() {
                   </div>
                   {/* Subtle background glow */}
                   <div className="absolute -inset-24 bg-accent opacity-5 blur-[120px] rounded-full pointer-events-none" />
-               </div>
+            </ScaleIn>
             </div>
          </div>
       </section>
       {/* CTA Section */}
       <section className="relative z-20 -mb-28 px-4 md:px-6">
+        <ScaleIn>
         <div className="container mx-auto bg-brand-gradient rounded-[40px] md:rounded-[60px] overflow-hidden relative min-h-[450px] flex items-center shadow-elite border border-white/10">
           {/* Floating Decorative Elements */}
           <div className="absolute top-1/4 -left-12 w-48 h-12 bg-white/10 rounded-full rotate-45 blur-md animate-pulse-slow" />
@@ -237,6 +239,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        </ScaleIn>
       </section>
     </main>
   );

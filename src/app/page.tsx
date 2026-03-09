@@ -44,10 +44,10 @@ export default function Home() {
               <div className="inline-block px-4 py-1.5 rounded-full bg-accent/20 border border-accent/20 text-accent text-xs font-bold uppercase tracking-[0.2em]">
                  {siteConfig.hero.dailyRatesNotice}
               </div>
-              <h1 className="text-2xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
                 {siteConfig.hero.title}
               </h1>
-              <p className="text-base md:text-xl text-slate-300 font-medium max-w-2xl leading-relaxed">
+              <p className="text-lg md:text-xl text-slate-300 font-medium max-w-2xl leading-relaxed">
                 {siteConfig.hero.subtitle}
               </p>
             </div>

@@ -1,0 +1,512 @@
+[00:00:02.690] Server  LOG     ✓ Ready in 1861ms
+[00:00:06.111] Server  LOG     ○ Compiling /products ...
+[00:00:11.760] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:13.409] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:13.731] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/products" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/h...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="scroll-smooth"
+-                         crxlauncher=""
+                        >
+                  ...
+
+[00:00:13.731] Browser WARN    Image with src "/images/cement.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:13.731] Browser WARN    Image with src "/images/steel.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:13.731] Browser WARN    Image with src "/images/bajri.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:13.731] Browser WARN    Image with src "/images/reti.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:13.732] Browser WARN    Image with src "/images/tiles.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:16.179] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:16.526] Browser WARN    Image with src "/images/hero_bg.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:01.471] Server  LOG     ✓ Compiled in 44ms
+[00:04:02.645] Server  LOG     ✓ Compiled in 13ms
+[00:04:30.275] Server  LOG     ✓ Compiled in 1521ms
+[00:05:16.733] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:06:03.640] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:06:08.908] Server  LOG     ○ Compiling /contact ...
+[00:10:02.126] Server  LOG     ✓ Compiled in 3.1s
+[00:10:42.307] Server  LOG     ✓ Compiled in 1762ms
+[00:11:01.630] Server  LOG     ✓ Compiled in 1031ms
+[00:11:45.270] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:11:53.923] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:12:06.554] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:12:12.370] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:14:04.037] Server  LOG     ✓ Compiled in 1588ms
+[00:14:31.965] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:15:26.370] Server  LOG     ✓ Compiled in 520ms
+[00:15:29.601] Server  LOG     ✓ Compiled in 185ms
+[00:15:41.175] Server  LOG     ✓ Compiled in 191ms
+[00:15:43.508] Server  LOG     ✓ Compiled in 157ms
+[00:15:49.124] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:15:50.803] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:51.743] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/products" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/h...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="scroll-smooth"
+-                         crxlauncher=""
+                        >
+                  ...
+
+[00:15:58.942] Server  LOG     ✓ Compiled in 132ms
+[00:16:03.831] Server  LOG     ✓ Compiled in 170ms
+[00:16:08.220] Server  LOG     ✓ Compiled in 300ms
+[00:16:12.243] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:16:13.458] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:14.027] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/products" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/h...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="scroll-smooth"
+-                         crxlauncher=""
+                        >
+                  ...
+
+[00:16:21.656] Server  LOG     ✓ Compiled in 128ms
+[00:16:30.129] Server  LOG     ✓ Compiled in 137ms
+[00:16:33.650] Server  LOG     ✓ Compiled in 150ms
+[00:16:38.705] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:16:39.909] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:40.506] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/products" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/h...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="scroll-smooth"
+-                         crxlauncher=""
+                        >
+                  ...
+
+[00:16:52.828] Server  LOG     ✓ Compiled in 95ms
+[00:16:59.691] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:17:00.251] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:17:39.199] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:43.700] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:17:44.269] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:17:44.269] Browser WARN    Image with src "/images/hero_bg.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:44.269] Browser WARN    Image with src "/images/cement.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:44.269] Browser WARN    Image with src "/images/steel.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:17:44.830] Server  LOG     ✓ Compiled in 1815ms
+[00:19:43.480] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:19:44.330] Browser WARN    Image with src "/images/tiles.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:44.330] Browser WARN    Image with src "/images/reti.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:19:44.523] Browser WARN    Image with src "/images/bajri.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:21:25.215] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:25.654] Browser WARN    Image with src "/images/cement.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:21:25.654] Browser WARN    Image with src "/images/steel.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:21:25.654] Browser WARN    Image with src "/images/bajri.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:21:25.654] Browser WARN    Image with src "/images/reti.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:21:25.654] Browser WARN    Image with src "/images/tiles.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:22:06.197] Server  LOG     ✓ Compiled in 221ms
+[00:22:06.322] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/" "received" null
+[00:22:07.799] Server  LOG     ✓ Compiled in 18ms
+[00:22:12.143] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/dg." "received" null
+[00:22:12.145] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/dg" "received" null
+[00:22:12.370] Browser WARN    Image with src "/images/dg.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:23:15.152] Server  LOG     ✓ Compiled in 24ms
+[00:23:59.235] Server  LOG     ✓ Compiled in 107ms
+[00:23:59.531] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/dg.w" "received" null
+[00:24:02.717] Server  LOG     ✓ Compiled in 27ms
+[00:24:03.376] Browser WARN    Image with src "/images/dg.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:48.751] Server  LOG     ✓ Compiled in 83ms
+[00:31:49.371] Browser WARN    Image with src "/images/lucky.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:08.043] Server  LOG     ✓ Compiled in 34ms
+[00:32:49.905] Server  LOG     ✓ Compiled in 10ms
+[00:32:55.601] Server  LOG     ✓ Compiled in 27ms
+[00:33:28.138] Server  LOG     ✓ Compiled in 27ms
+[00:35:35.735] Server  LOG     ✓ Compiled in 34ms
+[00:35:36.237] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ma.png" "received" null
+[00:35:38.103] Server  LOG     ✓ Compiled in 11ms
+[00:35:39.371] Browser WARN    Image with src "/images/maple.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:37:17.055] Server  LOG     ✓ Compiled in 43ms
+[00:37:17.252] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images" "received" null
+[00:37:22.034] Server  LOG     ✓ Compiled in 10ms
+[00:37:22.379] Browser WARN    Image with src "/images/flying.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:38:45.848] Server  LOG     ✓ Compiled in 20ms
+[00:38:46.168] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/islambad.png" "received" null
+[00:38:56.967] Server  LOG     ✓ Compiled in 12ms
+[00:38:57.074] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/islambad." "received" null
+[00:38:59.365] Server  LOG     ✓ Compiled in 10ms
+[00:39:00.119] Browser WARN    Image with src "/images/islambad.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:49:37.405] Server  LOG     ✓ Compiled in 99ms
+[00:49:37.773] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/rati.png" "received" null
+[00:49:49.479] Server  LOG     ✓ Compiled in 21ms
+[00:49:49.674] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/rati." "received" null
+[00:49:52.648] Server  LOG     ✓ Compiled in 18ms
+[00:49:53.379] Browser WARN    Image with src "/images/rati.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:56:57.148] Server  LOG     ✓ Compiled in 406ms
+[00:56:58.381] Browser ERROR   ./Desktop/hafiz Iron Store/src/data/products.json
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/Desktop/hafiz Iron Store/src/data/products.json (json)
+
+Caused by:
+- Unable to make a module from invalid JSON: invalid escape at line 71 column 41
+
+Debug info:
+- An error occurred while generating the chunk item [project]/Desktop/hafiz Iron Store/src/data/products.json (json)
+- Execution of <JsonChunkItem as EcmascriptChunkItem>::content failed
+- Unable to make a module from invalid JSON: invalid escape at line 71 column 41
+    at categories[2].products[1].image
+      67 |         },
+      68 |         {
+      69 |           "title": "Reti (Sand)",
+      70 |           "description": "Premium Ravi/Chenab sand, washed and screened for plaster and masonry.",
+         |                                         v
+      71 +           "image": "/images/rati.webpc:\Users\User\Downloads\hq720.jpg",
+         |                                         ^
+      72 |           "stockStatus": "Available in Stock",
+      73 |           "featured": false
+      74 |         },
+      75 |         {
+
+Import trace:
+  Client Component SSR:
+    ./Desktop/hafiz Iron Store/src/data/products.json
+    ./Desktop/hafiz Iron Store/src/app/products/page.tsx [Client Component SSR]
+    ./Desktop/hafiz Iron Store/src/app/products/page.tsx [Server Component]
+[00:57:20.385] Browser ERROR   ./Desktop/hafiz Iron Store/src/data/products.json
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/Desktop/hafiz Iron Store/src/data/products.json (json)
+
+Caused by:
+- Unable to make a module from invalid JSON: invalid escape at line 71 column 41
+
+Debug info:
+- An error occurred while generating the chunk item [project]/Desktop/hafiz Iron Store/src/data/products.json (json)
+- Execution of <JsonChunkItem as EcmascriptChunkItem>::content failed
+- Unable to make a module from invalid JSON: invalid escape at line 71 column 41
+    at categories[2].products[1].image
+      67 |         },
+      68 |         {
+      69 |           "title": "Reti (Sand)",
+      70 |           "description": "Premium Ravi/Chenab sand, washed and screened for plaster and masonry.",
+         |                                         v
+      71 +           "image": "/images/rati.webpc:\Users\User\Downloads\hq720.jpg",
+         |                                         ^
+      72 |           "stockStatus": "Available in Stock",
+      73 |           "featured": false
+      74 |         },
+      75 |         {
+
+Import trace:
+  Client Component SSR:
+    ./Desktop/hafiz Iron Store/src/data/products.json
+    ./Desktop/hafiz Iron Store/src/app/products/page.tsx [Client Component SSR]
+    ./Desktop/hafiz Iron Store/src/app/products/page.tsx [Server Component]
+[00:59:26.354] Server  LOG     ✓ Compiled in 142ms
+[00:59:27.480] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/rat" "received" null
+[00:59:35.102] Server  LOG     ✓ Compiled in 20ms
+[00:59:35.309] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/rati" "received" null
+[00:59:37.812] Server  LOG     ✓ Compiled in 45ms
+[00:59:37.963] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/rati.web" "received" null
+[00:59:40.177] Server  LOG     ✓ Compiled in 16ms
+[00:59:46.006] Server  LOG     ✓ Compiled in 50ms
+[00:59:46.157] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/taso.png" "received" null
+[00:59:49.337] Server  LOG     ✓ Compiled in 12ms
+[00:59:49.512] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/taso." "received" null
+[00:59:51.191] Server  LOG     ✓ Compiled in 23ms
+[00:59:52.372] Browser WARN    Image with src "/images/taso.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:00:11.655] Server  LOG     ✓ Compiled in 11ms
+[01:00:31.986] Server  LOG     ✓ Compiled in 18ms
+[01:00:37.048] Server  LOG     ✓ Compiled in 32ms
+[01:00:37.377] Browser ERROR   ./Desktop/hafiz Iron Store/src/data/products.json
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/Desktop/hafiz Iron Store/src/data/products.json (json)
+
+Caused by:
+- Unable to make a module from invalid JSON: trailing comma at line 56 column 7
+
+Debug info:
+- An error occurred while generating the chunk item [project]/Desktop/hafiz Iron Store/src/data/products.json (json)
+- Execution of <JsonChunkItem as EcmascriptChunkItem>::content failed
+- Unable to make a module from invalid JSON: trailing comma at line 56 column 7
+    at categories[1].products
+      52 |           "stockStatus": "Bulk Orders Accepted",
+      53 |           "featured": true
+      54 |         },
+      55 |         
+         |       v
+      56 +       ]
+         |       ^
+      57 |     },
+      58 |     {
+      59 |       "id": "construction",
+      60 |       "name": "CONSTRUCTION MATERIAL",
+
+Import trace:
+  Client Component SSR:
+    ./Desktop/hafiz Iron Store/src/data/products.json
+    ./Desktop/hafiz Iron Store/src/app/products/page.tsx [Client Component SSR]
+    ./Desktop/hafiz Iron Store/src/app/products/page.tsx [Server Component]
+[01:00:38.260] Server  LOG     ✓ Compiled in 18ms
+[01:00:56.380] Server  LOG     ✓ Compiled in 22ms
+[01:02:43.950] Server  LOG     ✓ Compiled in 42ms
+[01:16:39.661] Server  LOG     ✓ Compiled in 101ms
+[01:16:40.388] Browser ERROR   ./Desktop/hafiz Iron Store/src/data/products.json
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/Desktop/hafiz Iron Store/src/data/products.json (json)
+
+Caused by:
+- Unable to make a module from invalid JSON: invalid escape at line 56 column 34
+
+Debug info:
+- An error occurred while generating the chunk item [project]/Desktop/hafiz Iron Store/src/data/products.json (json)
+- Execution of <JsonChunkItem as EcmascriptChunkItem>::content failed
+- Unable to make a module from invalid JSON: invalid escape at line 56 column 34
+    at categories[1].products[2].title
+      52 |           "stockStatus": "Bulk Orders Accepted",
+      53 |           "featured": true
+      54 |         },
+      55 |          {
+         |                                  v
+      56 +           "title": "wire coilsc:\Users\User\Downloads\coils-black-iron-wire.jpg",
+         |                                  ^
+      57 |           "description": "Wide variety of floor and wall tiles. Modern designs with long-lasting finish.",
+      58 |           "image": "/images/taso.jpg",
+      59 |           "stockStatus": "Available in Stock",
+      60 |           "featured": true  
+
+Import trace:
+  Client Component SSR:
+    ./Desktop/hafiz Iron Store/src/data/products.json
+    ./Desktop/hafiz Iron Store/src/app/products/page.tsx [Client Component SSR]
+    ./Desktop/hafiz Iron Store/src/app/products/page.tsx [Server Component]
+[01:16:41.138] Server  LOG     ✓ Compiled in 26ms
+[01:17:11.879] Server  LOG     ✓ Compiled in 30ms
+[01:17:13.374] Browser WARN    Image with src "/images/iron.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:17:58.330] Server  LOG     ✓ Compiled in 23ms
+[01:17:58.858] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/wire-coils.jpg" "received" null
+[01:18:18.055] Server  LOG     ✓ Compiled in 18ms
+[01:18:18.203] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/wirecoils.jpg" "received" null
+[01:18:23.307] Server  LOG     ✓ Compiled in 60ms
+[01:19:45.989] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:19:46.353] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:19:46.353] Browser WARN    Image with src "/images/hero_bg.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:20:37.731] Server  LOG     ✓ Compiled in 232ms
+[01:20:38.383] Browser ERROR   ./Desktop/hafiz Iron Store/src/data/products.json
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/Desktop/hafiz Iron Store/src/data/products.json (json)
+
+Caused by:
+- Unable to make a module from invalid JSON: expected ident at line 60 column 25
+
+Debug info:
+- An error occurred while generating the chunk item [project]/Desktop/hafiz Iron Store/src/data/products.json (json)
+- Execution of <JsonChunkItem as EcmascriptChunkItem>::content failed
+- Unable to make a module from invalid JSON: expected ident at line 60 column 25
+    at categories[1].products[2].featured
+      56 |           "title": "Wire Coils",
+      57 |           "description": "High-quality wire coils suitable for construction, industrial, and electrical applications. Durable material with strong flexibility and long-lasting performance.",
+      58 |           "image": "/images/iron.jpg",
+      59 |           "stockStatus": "Available in Stock",
+         |                         v
+      60 +           "featured": fa  
+         |                         ^
+      61 |         }
+      62 |       ]
+      63 |     },
+      64 |     {
+
+Import trace:
+  Client Component SSR:
+    ./Desktop/hafiz Iron Store/src/data/products.json
+    ./Desktop/hafiz Iron Store/src/app/products/page.tsx [Client Component SSR]
+    ./Desktop/hafiz Iron Store/src/app/products/page.tsx [Server Component]
+[01:20:40.461] Server  LOG     ✓ Compiled in 24ms
+[01:20:46.809] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:20:52.749] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:22:41.355] Server  LOG     ✓ Compiled in 27ms
+[01:22:41.517] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ka.png" "received" null
+[01:22:43.852] Server  LOG     ✓ Compiled in 32ms
+[01:22:43.928] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/karachi.png" "received" null
+[01:22:48.948] Server  LOG     ✓ Compiled in 17ms
+[01:22:49.034] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/karachi." "received" null
+[01:22:51.021] Server  LOG     ✓ Compiled in 12ms
+[01:22:51.093] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/karachi.jpg" "received" null
+[01:22:54.717] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:22:55.649] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/karachi.jpg" "received" null
+[01:22:55.658] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:56.009] Browser WARN    Image with src "/images/karachi.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:22:56.009] Browser WARN    Image with src "/images/dg.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:22:56.009] Browser WARN    Image with src "/images/lucky.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:22:56.009] Browser WARN    Image with src "/images/islambad.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:22:56.009] Browser WARN    Image with src "/images/hero_bg.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:13.550] Server  LOG     ✓ Compiled in 26ms
+[01:23:14.134] Browser WARN    Image with src "/images/karachi.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:21.035] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:23:21.321] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:23:21.321] Browser WARN    Image with src "/images/cement.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:23:21.321] Browser WARN    Image with src "/images/steel.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:24:17.852] Server  LOG     ✓ Compiled in 460ms
+[01:24:18.379] Browser WARN    Image with src "/images/dg.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:24:28.073] Server  LOG     ✓ Compiled in 125ms
+[01:24:31.546] Server  LOG     ✓ Compiled in 121ms
+[01:24:31.629] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/.png" "received" null
+[01:24:34.818] Server  LOG     ✓ Compiled in 97ms
+[01:24:34.903] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/karachii.png" "received" null
+[01:24:36.145] Server  LOG     ✓ Compiled in 101ms
+[01:24:36.212] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/karachi.png" "received" null
+[01:24:42.134] Server  LOG     ✓ Compiled in 162ms
+[01:24:55.410] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:25:07.317] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:26:39.999] Server  LOG     ✓ Compiled in 233ms
+[01:27:24.714] Server  LOG     ✓ Compiled in 173ms
+[01:29:31.001] Server  LOG     ✓ Compiled in 140ms
+[01:29:31.645] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:29:57.903] Server  LOG     ✓ Compiled in 329ms
+[01:30:45.453] Server  LOG     ✓ Compiled in 389ms
+[01:30:46.865] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:31:29.366] Server  LOG     ✓ Compiled in 163ms
+[01:31:41.542] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:31:42.927] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:31:43.634] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Desktop/h...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="scroll-smooth"
+-                         crxlauncher=""
+                        >
+                  ...
+
+[01:31:52.328] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:31:52.686] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:32:40.917] Server  LOG     ✓ Compiled in 118ms

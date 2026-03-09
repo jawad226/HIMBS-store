@@ -1,0 +1,26 @@
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/_app": []
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/077f9_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_8aca47fa._.js",
+    "static/chunks/077f9_next_dist_compiled_react-dom_6ab1a00b._.js",
+    "static/chunks/077f9_next_dist_compiled_react-server-dom-turbopack_045384d7._.js",
+    "static/chunks/077f9_next_dist_compiled_next-devtools_index_353b903e.js",
+    "static/chunks/077f9_next_dist_compiled_d1c44b52._.js",
+    "static/chunks/077f9_next_dist_client_730196e5._.js",
+    "static/chunks/077f9_next_dist_cd40a006._.js",
+    "static/chunks/077f9_@swc_helpers_cjs_18f045f6._.js",
+    "static/chunks/Desktop_hafiz Iron Store_a0ff3932._.js",
+    "static/chunks/turbopack-Desktop_hafiz Iron Store_60e2db0e._.js"
+  ]
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js"
+];

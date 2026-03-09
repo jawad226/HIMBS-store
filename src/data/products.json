@@ -7,28 +7,28 @@
         {
           "title": "DG Khan Cement",
           "description": "Premium quality ordinary portland cement for general construction and high-strength projects.",
-          "image": "/images/cement.png",
+          "image": "/images/dg.webp",
           "stockStatus": "Available in Stock",
           "featured": true
         },
         {
-          "title": "Lucky Cement",
+          "title": "Lucky Supreme Cement",
           "description": "Trusted nationwide for its durability and fast setting properties in all weather conditions.",
-          "image": "/images/cement.png",
+          "image": "/images/lucky.png",
           "stockStatus": "Available in Stock",
           "featured": true
         },
         {
-          "title": "Falcon Cement",
+          "title": "Flying pakistan",
           "description": "High-strength cement perfect for industrial and multi-story building foundations.",
-          "image": "/images/cement.png",
+          "image": "/images/flying.png",
           "stockStatus": "Available in Stock",
           "featured": false
         },
         {
           "title": "Maple Leaf Cement",
           "description": "Premium finish and superior strength, ideal for all types of construction.",
-          "image": "/images/cement.png",
+          "image": "/images/maple.png",
           "stockStatus": "Available in Stock",
           "featured": false
         }
@@ -39,18 +39,25 @@
       "name": "IRON / STEEL",
       "products": [
         {
-          "title": "Karachi Iron (Grade 60)",
+          "title": "Karachi Iron (Grade 40)",
           "description": "High-tensile deformed steel bars. Available Sizes: 10mm, 12mm, 16mm, 20mm.",
-          "image": "/images/steel.png",
+          "image": "/images/karachi.jpeg",
           "stockStatus": "Wholesale & Retail",
           "featured": true
         },
         {
           "title": "Islamabad Iron",
           "description": "Superior quality structural steel for maximum stability and earthquake resistance.",
-          "image": "/images/steel.png",
+          "image": "/images/islambad.jpg",
           "stockStatus": "Bulk Orders Accepted",
           "featured": true
+        },
+        {
+          "title": "Wire Coils",
+          "description": "High-quality wire coils suitable for construction, industrial, and electrical applications. Durable material with strong flexibility and long-lasting performance.",
+          "image": "/images/iron.jpg",
+          "stockStatus": "Available in Stock",
+          "featured": false
         }
       ]
     },
@@ -68,14 +75,14 @@
         {
           "title": "Reti (Sand)",
           "description": "Premium Ravi/Chenab sand, washed and screened for plaster and masonry.",
-          "image": "/images/reti.png",
+          "image": "/images/rati.webp",
           "stockStatus": "Available in Stock",
           "featured": false
         },
         {
           "title": "Tiles (Taso)",
           "description": "Wide variety of floor and wall tiles. Modern designs with long-lasting finish.",
-          "image": "/images/tiles.png",
+          "image": "/images/taso.jpg",
           "stockStatus": "Available in Stock",
           "featured": false
         }

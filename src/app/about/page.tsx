@@ -143,13 +143,13 @@ export default function AboutPage() {
                <div className="grid grid-cols-2 gap-6 relative">
                   <div className="space-y-6">
                      <div className="aspect-[4/5] relative rounded-[40px] overflow-hidden shadow-2xl border-4 border-slate-100">
-                        <Image src="/images/cement.png" alt="Cement" fill className="object-cover" />
+                        <Image src="/images/dg.webp" alt="Cement" fill className="object-cover" />
                         <div className="absolute inset-0 bg-primary/5" />
                      </div>
                   </div>
                   <div className="space-y-6 pt-12">
                      <div className="aspect-[4/5] relative rounded-[40px] overflow-hidden shadow-2xl border-4 border-slate-100">
-                        <Image src="/images/steel.png" alt="Steel" fill className="object-cover" />
+                        <Image src="/images/karachi.jpeg" alt="Steel" fill className="object-cover" />
                         <div className="absolute inset-0 bg-primary/5" />
                      </div>
                   </div>

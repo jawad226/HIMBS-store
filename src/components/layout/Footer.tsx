@@ -11,17 +11,17 @@ const Footer = () => {
   return (
     <>
       {/* Footer Content */}
-      <footer className="bg-[#00385F] pt-40 pb-12 overflow-hidden relative border-t border-white/5">
+      <footer className="bg-[#00385F] pt-24 md:pt-40 pb-12 overflow-hidden relative border-t border-white/5">
         <div className="absolute inset-0 bg-white/[0.02] pointer-events-none" />
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-16">
           <div className="col-span-1 md:col-span-2 space-y-6">
             <Link href="/" className="flex items-center group">
-              <div className="premium-logo-container w-32 h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <div className="premium-logo-container w-[110px] h-[45px] md:w-[130px] md:h-[54px] flex items-center justify-center transition-all duration-500 group-hover:scale-105">
                 <img 
                   src={siteConfig.logo} 
                   alt={siteConfig.name}
-                  className="w-[110px] h-[90px] object-contain brightness-0 invert opacity-90"
+                    className="w-full h-full object-contain brightness-0 invert opacity-90 p-2"
                 />
               </div>
             </Link>

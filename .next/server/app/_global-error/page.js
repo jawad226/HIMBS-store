@@ -1,0 +1,10 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_global-error/page.js")
+R.c("server/chunks/ssr/077f9_824375fb._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__27037839._.js")
+R.c("server/chunks/ssr/077f9_next_dist_c29fe40b._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__d768aa91._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__91d45c21._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__89bc1d74._.js")
+R.c("server/chunks/ssr/3d860_hafiz Iron Store__next-internal_server_app__global-error_page_actions_982fd8a0.js")
+R.m(69945)
+module.exports=R.m(69945).exports

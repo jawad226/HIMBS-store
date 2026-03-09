@@ -78,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* Featured Products Section */}
-      <section className="py-32 bg-slate-50">
+      <section className="py-20 md:py-32 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center space-y-4 mb-20">
             <h2 className="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">
@@ -111,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* Our Legacy Section */}
-      <section className="py-24 bg-brand-gradient text-white relative overflow-hidden">
+      <section className="py-20 md:py-24 bg-brand-gradient text-white relative overflow-hidden">
         {/* Background Decorative */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full translate-y-1/3 -translate-x-1/3 blur-3xl pointer-events-none" />
@@ -165,7 +165,7 @@ export default function Home() {
         </div>
       </section>
       {/* Trust & Quality Section */}
-      <section className="py-24 bg-white border-y border-slate-100">
+      <section className="py-20 md:py-24 bg-white border-y border-slate-100">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {siteConfig.home.features.map((feature: any, i: number) => {
@@ -200,7 +200,7 @@ export default function Home() {
           <div className="absolute top-20 right-1/4 w-4 h-4 bg-white/20 rounded-full animate-bounce" />
           <div className="absolute bottom-20 left-1/4 w-3 h-3 bg-accent/40 rounded-full" />
 
-          <div className="container mx-auto px-8 md:px-16 relative z-10 w-full">
+          <div className="container mx-auto px-6 py-16 md:px-16 md:py-0 relative z-10 w-full">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
               {/* Text Side */}
               <div className="flex-1 text-center lg:text-left space-y-8 max-w-2xl">
@@ -208,7 +208,7 @@ export default function Home() {
                   <span className="w-2 h-2 rounded-full bg-accent" />
                   <span className="text-xs font-bold uppercase tracking-[0.4em] text-white/60">GROW FAST WITH US</span>
                 </div>
-                <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.9]">
+                <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter leading-[0.9]">
                   Need Today's <br />
                   <span className="text-accent underline decoration-white/10 underline-offset-8">Market Rate?</span>
                 </h2>

@@ -43,7 +43,7 @@ export default function Contact() {
       </section>
 
       {/* Main Content */}
-      <section className="py-24 container mx-auto px-4 md:px-6 relative z-20 -mt-20">
+      <section className="py-12 md:py-24 container mx-auto px-4 md:px-6 relative z-20 -mt-12 md:-mt-20">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start max-w-7xl mx-auto">
           
           {/* Left Side: Contact Information Cards */}

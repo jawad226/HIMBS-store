@@ -109,7 +109,7 @@ export default function ProductsPage() {
           <div className="absolute top-20 right-1/4 w-4 h-4 bg-white/20 rounded-full animate-bounce" />
           <div className="absolute bottom-20 left-1/4 w-3 h-3 bg-accent/40 rounded-full" />
 
-          <div className="container mx-auto px-8 md:px-16 relative z-10 w-full">
+          <div className="container mx-auto px-6 py-16 md:px-16 md:py-0 relative z-10 w-full">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
               {/* Text Side */}
               <div className="flex-1 text-center lg:text-left space-y-8 max-w-2xl">
@@ -117,7 +117,7 @@ export default function ProductsPage() {
                   <span className="w-2 h-2 rounded-full bg-accent" />
                   <span className="text-xs font-bold uppercase tracking-[0.4em] text-white/60">GROW FAST WITH US</span>
                 </div>
-                <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.9]">
+                <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter leading-[0.9]">
                   Need a Bulk Order <br />
                   <span className="text-accent underline decoration-white/10 underline-offset-8">Quotation?</span>
                 </h2>

@@ -43,12 +43,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center group relative">
-          <div className="premium-logo-container w-[160px] h-[62px] flex items-center justify-center transition-all duration-500 group-hover:scale-105">
+          <div className="premium-logo-container w-[110px] md:w-[160px] h-[45px] md:h-[62px] flex items-center justify-center transition-all duration-500 group-hover:scale-105">
             <Image 
               src={siteConfig.logo} 
               alt={siteConfig.name}
-              width={140}
-              height={90}
+              fill
+              sizes="(max-width: 768px) 110px, 160px"
               className={cn(
                 "object-contain transition-all duration-300",
                 isHome && !scrolled && "brightness-0 invert opacity-90"
@@ -109,39 +109,37 @@ const Navbar = () => {
       {/* Mobile Drawer */}
       {isOpen && (
         <div className="fixed inset-0 z-[60] bg-white md:hidden animate-fade-in">
-          <div className="p-6">
+          <div className="p-6 h-full flex flex-col">
+            {/* Header */}
             <div className="flex justify-between items-center mb-12">
-              <div className="flex items-center gap-3">
+              <div className="premium-logo-container w-[130px] h-[54px] flex items-center justify-center">
                 <Image 
                   src={siteConfig.logo} 
                   alt={siteConfig.name}
-                  width={40}
-                  height={40}
+                  fill
+                  sizes="130px"
                   className="object-contain"
                 />
-                <div className="flex flex-col">
-                  <span className="font-black text-lg tracking-tight text-primary uppercase leading-none">
-                    {siteConfig.shortName}
-                  </span>
-                  <span className="text-[7px] font-bold tracking-[0.2em] uppercase mt-1 text-slate-400">
-                    Iron & Building Store
-                  </span>
-                </div>
               </div>
-              <button onClick={() => setIsOpen(false)} className="p-2 text-primary">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="p-2 text-primary hover:bg-slate-100 rounded-lg transition-colors"
+                aria-label="Close menu"
+              >
                 <X size={28} />
               </button>
             </div>
             
-            <div className="flex flex-col gap-6">
+            {/* Links */}
+            <div className="flex flex-col gap-6 flex-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={cn(
-                    'text-4xl font-extrabold tracking-tight',
-                    pathname === link.href ? 'text-accent' : 'text-slate-300'
+                    'text-3xl font-extrabold tracking-tight hover:text-accent transition-colors',
+                    pathname === link.href ? 'text-accent' : 'text-slate-400'
                   )}
                 >
                   {link.name}

@@ -86,7 +86,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-32">
+      <section className="py-20 md:py-32">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-20 space-y-4">
             <h2 className="text-3xl md:text-5xl font-extrabold text-primary tracking-tight">
@@ -116,7 +116,7 @@ export default function AboutPage() {
       </section>
 
       {/* Commitment Section */}
-      <section className="py-24 bg-white text-primary overflow-hidden relative border-y border-slate-100">
+      <section className="py-20 md:py-24 bg-white text-primary overflow-hidden relative border-y border-slate-100">
          <div className="absolute inset-0 bg-slate-50/50 pointer-events-none" />
          <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -128,7 +128,7 @@ export default function AboutPage() {
                   </div>
                   <h2 className="text-4xl md:text-6xl font-black tracking-tight leading-tight text-primary">
                      Our Commitment to <br />
-                     <span className="text-accent underline decoration-slate-200 underline-offset-8 text-5xl md:text-7xl">Structural Excellence.</span>
+                <span className="text-accent underline decoration-slate-200 underline-offset-8 text-4xl md:text-7xl">Structural Excellence.</span>
                   </h2>
                   <div className="space-y-6">
                      {siteConfig.about.commitments.map((text: string, i: number) => (
@@ -169,7 +169,7 @@ export default function AboutPage() {
           <div className="absolute top-20 right-1/4 w-4 h-4 bg-white/20 rounded-full animate-bounce" />
           <div className="absolute bottom-20 left-1/4 w-3 h-3 bg-accent/40 rounded-full" />
 
-          <div className="container mx-auto px-8 md:px-16 relative z-10 w-full">
+          <div className="container mx-auto px-6 py-16 md:px-16 md:py-0 relative z-10 w-full">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
               {/* Text Side */}
               <div className="flex-1 text-center lg:text-left space-y-8 max-w-2xl">
@@ -177,7 +177,7 @@ export default function AboutPage() {
                   <span className="w-2 h-2 rounded-full bg-accent" />
                   <span className="text-xs font-bold uppercase tracking-[0.4em] text-white/60">READY TO BUILD?</span>
                 </div>
-                <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter leading-[0.9]">
+                <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter leading-[0.9]">
                   Let's Start Your <br />
                   <span className="text-accent underline decoration-white/10 underline-offset-8">Construction.</span>
                 </h2>

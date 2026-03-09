@@ -32,7 +32,8 @@ const Navbar = () => {
   const shouldBeSolid = !isHome || scrolled;
 
   return (
-    <nav 
+    <>
+      <nav 
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         shouldBeSolid 
@@ -105,6 +106,7 @@ const Navbar = () => {
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
+      </nav>
 
       {/* Mobile Drawer */}
       {isOpen && (
@@ -159,7 +161,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </nav>
+    </>
   );
 };
 

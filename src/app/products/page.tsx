@@ -28,9 +28,9 @@ export default function ProductsPage() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen pt-24 bg-white">
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Header */}
-      <section className="py-20 bg-brand-gradient text-white relative overflow-hidden">
+      <section className="pt-36 pb-20 bg-brand-gradient text-white relative overflow-hidden">
         {/* Background Decorative */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full translate-y-1/3 -translate-x-1/3 blur-3xl pointer-events-none" />

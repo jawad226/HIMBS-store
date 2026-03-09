@@ -24,9 +24,9 @@ export default function Contact() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen pt-24 bg-slate-50">
+    <main className="flex flex-col min-h-screen bg-slate-50">
       {/* Hero Section */}
-      <section className="py-20 bg-brand-gradient text-white relative overflow-hidden">
+      <section className="pt-36 pb-20 bg-brand-gradient text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none" />
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center space-y-4">
           <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-black uppercase tracking-[0.2em] backdrop-blur-md">

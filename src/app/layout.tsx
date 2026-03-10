@@ -9,11 +9,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Hafiz Iron & Building Material Store | Sahiwal's Trusted Supplier",
+    default: "Hafiz Iron & Building Material Store | Bahawalpur Trusted Supplier",
     template: "%s | Hafiz Iron Store"
   },
   description: "Get the highest quality DG Khan Cement, Lucky Cement, and Grade 60 Iron in Sahiwal. Daily updated market rates, wholesale and retail available. Reliable site delivery.",
-  keywords: ["Hafiz Iron", "Hafiz Building Material", "Sahiwal Construction Store", "DG Khan Cement Sahiwal", "Lucky Cement Sahiwal", "Grade 60 Iron Sahiwal", "Steel Rates Sahiwal"],
+  keywords: ["Hafiz Iron", "Hafiz Building Material", "Bahawalpur Construction Store", "DG Khan Cement Sahiwal", "Lucky Cement Sahiwal", "Grade 60 Iron Sahiwal", "Steel Rates Sahiwal"],
   authors: [{ name: "Hafiz Iron Store" }],
   icons: {
     icon: "/logo.png",

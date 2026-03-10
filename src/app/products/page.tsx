@@ -148,7 +148,7 @@ export default function ProductsPage() {
                   </button>
                 </div>
                 <p className="text-white/30 font-black uppercase tracking-[0.3em] text-[10px]">
-                  Bulk Orders Accepted & Delivered Across Sahiwal
+                  Bulk Orders Accepted & Delivered Across Bahawalpur
                 </p>
               </div>
 

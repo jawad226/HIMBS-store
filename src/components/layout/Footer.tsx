@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
             </Link>
               <p className="text-slate-400 text-sm leading-relaxed max-w-[260px]">
-              Bahaawalpur premier destination for high-grade structural steel and certified cement brands. Foundations built with trust since 2023.
+              Bahawalpur premier destination for high-grade structural steel and certified cement brands. Foundations built with trust since 2023.
             </p>
               <div className="flex gap-3">
                 <button

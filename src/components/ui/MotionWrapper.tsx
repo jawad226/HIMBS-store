@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion, useInView, useMotionValue, useTransform, animate } from 'framer-motion';
+import { motion, useInView, animate } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 
 // ─── FadeIn ───────────────────────────────────────────
@@ -15,9 +15,6 @@ interface FadeInProps {
 }
 
 export function FadeIn({ children, className = '', delay = 0, duration = 0.6, direction = 'up' }: FadeInProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-80px' });
-
   const directionOffset = {
     up: { y: 40, x: 0 },
     down: { y: -40, x: 0 },
@@ -28,14 +25,14 @@ export function FadeIn({ children, className = '', delay = 0, duration = 0.6, di
 
   return (
     <motion.div
-      ref={ref}
       className={className}
       initial={{ 
         opacity: 0, 
         y: directionOffset[direction].y,
         x: directionOffset[direction].x 
       }}
-      animate={isInView ? { opacity: 1, y: 0, x: 0 } : {}}
+      whileInView={{ opacity: 1, y: 0, x: 0 }}
+      viewport={{ once: true, margin: '-50px' }}
       transition={{ duration, delay, ease: [0.25, 0.4, 0.25, 1] }}
     >
       {children}
@@ -52,26 +49,10 @@ interface StaggerContainerProps {
 }
 
 export function StaggerContainer({ children, className = '', staggerDelay = 0.1 }: StaggerContainerProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-60px' });
-
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
-      variants={{
-        hidden: {},
-        visible: {
-          transition: {
-            staggerChildren: staggerDelay,
-          },
-        },
-      }}
-    >
+    <div className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
@@ -80,20 +61,17 @@ export function StaggerContainer({ children, className = '', staggerDelay = 0.1 
 interface StaggerItemProps {
   children: React.ReactNode;
   className?: string;
+  delay?: number;
 }
 
-export function StaggerItem({ children, className = '' }: StaggerItemProps) {
+export function StaggerItem({ children, className = '', delay = 0 }: StaggerItemProps) {
   return (
     <motion.div
       className={className}
-      variants={{
-        hidden: { opacity: 0, y: 30 },
-        visible: { 
-          opacity: 1, 
-          y: 0,
-          transition: { duration: 0.5, ease: [0.25, 0.4, 0.25, 1] }
-        },
-      }}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-50px' }}
+      transition={{ duration: 0.5, delay, ease: [0.25, 0.4, 0.25, 1] }}
     >
       {children}
     </motion.div>
@@ -109,15 +87,12 @@ interface ScaleInProps {
 }
 
 export function ScaleIn({ children, className = '', delay = 0 }: ScaleInProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-80px' });
-
   return (
     <motion.div
-      ref={ref}
       className={className}
       initial={{ opacity: 0, scale: 0.85 }}
-      animate={isInView ? { opacity: 1, scale: 1 } : {}}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.6, delay, ease: [0.25, 0.4, 0.25, 1] }}
     >
       {children}

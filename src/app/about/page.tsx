@@ -207,7 +207,7 @@ export default function AboutPage() {
                   </button>
                 </div>
                 <p className="text-white/30 font-black uppercase tracking-[0.3em] text-[10px]">
-                  Quality Materials delivered across Sahiwal since 2008
+                  Quality Materials delivered across Bahawalpur since 2012
                 </p>
               </div>
 

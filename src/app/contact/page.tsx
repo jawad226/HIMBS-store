@@ -17,11 +17,45 @@ import siteConfig from '@/data/siteConfig.json';
 import { FadeIn, StaggerContainer, StaggerItem, ScaleIn } from '@/components/ui/MotionWrapper';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError('');
+
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send inquiry. Please try again later.');
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError((err as Error).message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   return (
@@ -95,6 +129,7 @@ export default function Contact() {
               <button 
                 className="w-full relative flex items-center justify-between bg-success hover:bg-[#16a34a] text-white rounded-2xl p-4 transition-all shadow-lg hover:shadow-success/30 group/btn"
                 onClick={() => window.open(`https://wa.me/${siteConfig.contact.whatsappRaw}`, '_blank')}
+                  type="button"
               >
                 <span className="font-black tracking-widest text-xs uppercase pl-2">Start Chat</span>
                 <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center group-hover/btn:translate-x-1 transition-transform">
@@ -133,7 +168,10 @@ export default function Contact() {
                   </p>
                 </div>
                 <button 
-                  onClick={() => setSubmitted(false)} 
+                  onClick={() => {
+                    setSubmitted(false);
+                    setFormData({ name: '', email: '', phone: '', message: '' });
+                  }} 
                   className="px-8 py-4 bg-white border-2 border-slate-200 hover:border-slate-300 text-slate-600 rounded-full font-black text-xs uppercase tracking-widest transition-all"
                 >
                   Send Another Inquiry
@@ -141,6 +179,11 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-8">
+                  {error && (
+                    <div className="p-4 bg-red-50 border border-red-100 text-red-600 rounded-2xl text-sm font-medium">
+                      {error}
+                    </div>
+                  )}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-2 relative group">
                     <label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2 group-focus-within:text-accent transition-colors">
@@ -148,7 +191,10 @@ export default function Contact() {
                     </label>
                     <input 
                       type="text" 
+                        name="name"
                       required
+                        value={formData.name}
+                        onChange={handleChange}
                       placeholder="e.g. Ali Ahmed"
                       className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:ring-4 focus:ring-accent/10 focus:border-accent focus:bg-white transition-all font-medium text-slate-900 placeholder:text-slate-300"
                     />
@@ -159,7 +205,10 @@ export default function Contact() {
                     </label>
                     <input 
                       type="email" 
+                        name="email"
                       required
+                        value={formData.email}
+                        onChange={handleChange}
                       placeholder="ali@example.com"
                       className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:ring-4 focus:ring-accent/10 focus:border-accent focus:bg-white transition-all font-medium text-slate-900 placeholder:text-slate-300"
                     />
@@ -172,6 +221,9 @@ export default function Contact() {
                   </label>
                   <input 
                     type="tel" 
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                     placeholder="0300 1234567"
                     className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:ring-4 focus:ring-accent/10 focus:border-accent focus:bg-white transition-all font-medium text-slate-900 placeholder:text-slate-300"
                   />
@@ -183,7 +235,10 @@ export default function Contact() {
                   </label>
                   <textarea 
                     rows={5} 
+                      name="message"
                     required
+                      value={formData.message}
+                      onChange={handleChange}
                     placeholder="Tell us about your project or the materials you need..."
                     className="w-full px-6 py-5 bg-slate-50 border border-slate-200 rounded-[20px] outline-none focus:ring-4 focus:ring-accent/10 focus:border-accent focus:bg-white transition-all font-medium text-slate-900 placeholder:text-slate-300 resize-none"
                   />
@@ -195,10 +250,11 @@ export default function Contact() {
                   </p>
                   <button 
                     type="submit"
-                    className="w-full sm:w-auto px-10 py-5 bg-primary hover:bg-black text-white rounded-full font-black text-sm tracking-widest transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 relative overflow-hidden group/submit"
+                      disabled={loading}
+                      className="w-full sm:w-auto px-10 py-5 bg-primary hover:bg-black text-white rounded-full font-black text-sm tracking-widest transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 relative overflow-hidden group/submit disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    <span className="relative z-10">SUBMIT INQUIRY</span>
-                    <div className="absolute inset-0 bg-accent translate-y-full group-hover/submit:translate-y-0 transition-transform duration-300 z-0" />
+                      <span className="relative z-10">{loading ? 'SENDING...' : 'SUBMIT INQUIRY'}</span>
+                      {!loading && <div className="absolute inset-0 bg-accent translate-y-full group-hover/submit:translate-y-0 transition-transform duration-300 z-0" />}
                   </button>
                 </div>
               </form>

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Hammer, Phone, MapPin, MessageCircle, ArrowUpRight, ShieldCheck, Building2, Facebook, Linkedin, Mail } from 'lucide-react';
+import { Hammer, Phone, MapPin, MessageCircle, ArrowUpRight, ShieldCheck, Building2, Facebook, Linkedin, Mail, Clock } from 'lucide-react';
 import Button from '../ui/Button';
 import { FadeIn, StaggerContainer, StaggerItem } from '../ui/MotionWrapper';
 
@@ -15,8 +15,8 @@ const Footer = () => {
       <footer className="bg-[#00385F] pt-40 md:pt-48 pb-12 overflow-hidden relative border-t border-white/5">
         <div className="absolute inset-0 bg-white/[0.02] pointer-events-none" />
       <div className="container mx-auto px-4 md:px-6">
-          <StaggerContainer className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-16" staggerDelay={0.15}>
-            <StaggerItem className="col-span-1 md:col-span-2 space-y-6">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-16 mb-16" staggerDelay={0.15}>
+            <StaggerItem className="space-y-6">
             <Link href="/" className="flex items-center group">
                 <div className="premium-logo-container w-[110px] h-[45px] md:w-[130px] md:h-[54px] flex items-center justify-center transition-all duration-500 group-hover:scale-105">
                 <img 
@@ -26,7 +26,7 @@ const Footer = () => {
                 />
               </div>
             </Link>
-            <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
+              <p className="text-slate-400 text-sm leading-relaxed max-w-[260px]">
               Bahaawalpur premier destination for high-grade structural steel and certified cement brands. Foundations built with trust since 2023.
             </p>
               <div className="flex gap-3">
@@ -63,6 +63,33 @@ const Footer = () => {
                   <Mail size={18} className="group-hover/ml:scale-110 transition-transform" />
                 </a>
             </div>
+            </StaggerItem>
+
+            <StaggerItem className="space-y-6">
+              <h4 className="text-white font-bold text-lg">Business Hours</h4>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3 group/time">
+                  <Clock size={18} className="text-accent shrink-0 group-hover/time:rotate-12 transition-transform duration-300" />
+                  <div className="flex flex-col">
+                    <span className="text-slate-200 text-sm font-bold tracking-tight">{siteConfig.businessHours.days}</span>
+                    <span className="text-accent text-xs font-semibold mt-1">{siteConfig.businessHours.time}</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3 group/time2">
+                  <Clock size={18} className="text-accent shrink-0 group-hover/time2:rotate-12 transition-transform duration-300" />
+                  <div className="flex flex-col">
+                    <span className="text-slate-200 text-sm font-bold tracking-tight">{siteConfig.businessHours.weekend}</span>
+                    <span className="text-accent text-xs font-semibold mt-1">{siteConfig.businessHours.time}</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3 group/fri">
+                  <Clock size={18} className="text-red-400/80 shrink-0 group-hover/fri:shake transition-transform" />
+                  <div className="flex flex-col">
+                    <span className="text-slate-400 text-sm font-medium">Friday</span>
+                    <span className="text-red-400 text-xs font-bold mt-1 uppercase tracking-wider">{siteConfig.businessHours.friday}</span>
+                  </div>
+                </li>
+              </ul>
             </StaggerItem>
 
             <StaggerItem className="space-y-6">

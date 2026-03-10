@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     default: "Hafiz Iron & Building Material Store | Bahawalpur Trusted Supplier",
     template: "%s | Hafiz Iron Store"
   },
-  description: "Get the highest quality DG Khan Cement, Lucky Cement, and Grade 60 Iron in Sahiwal. Daily updated market rates, wholesale and retail available. Reliable site delivery.",
-  keywords: ["Hafiz Iron", "Hafiz Building Material", "Bahawalpur Construction Store", "DG Khan Cement Sahiwal", "Lucky Cement Sahiwal", "Grade 60 Iron Sahiwal", "Steel Rates Sahiwal"],
+  description: "Get the highest quality DG Khan Cement, Lucky Cement, and Grade 60 Iron in Bahawalpur. Daily updated market rates, wholesale and retail available. Reliable site delivery.",
+  keywords: ["Hafiz Iron", "Hafiz Building Material", "Bahawalpur Construction Store", "DG Khan Cement Bahawalpur", "Lucky Cement Bahawalpur", "Grade 60 Iron Bahawalpur", "Steel Rates Bahawalpur"],
   authors: [{ name: "Hafiz Iron Store" }],
   icons: {
     icon: "/logo.png",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_PK",
     url: "https://hafizironstore.com",
     title: "Hafiz Iron & Building Material Store",
-    description: "Quality Construction Materials at Competitive Market Rates. Sahiwal's premier destination for steel and cement.",
+    description: "Quality Construction Materials at Competitive Market Rates. Bahawalpur's premier destination for steel and cement.",
     siteName: "Hafiz Iron Store",
     images: [
       {
